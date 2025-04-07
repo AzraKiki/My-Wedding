@@ -2,6 +2,7 @@
     --pink: #f14e95;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0 / 1);
+    --shadow1: 0 2px 2px rgb(0 0 0 / 0.5);
 
 }
 body {
@@ -100,8 +101,22 @@ color: white;
 }
 
   
-.home h2, .info h2, .story h2, .galery h2, .rsvp h2, .gifts h2 {
+.home h2, .info h2, .rsvp h2, .gifts h2 {
     color: var(--pink);
+    font-family: 'italianno',cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.story h2 {
+    color: black;
+    text-shadow: rgb(0, 0, 0 / 0.5);
+    font-family: 'italianno',cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.galery h2 {
+    color: blue;
+    text-shadow: var(--shadow1);
     font-family: 'italianno',cursive;
     font-size: 3.5rem;
     font-weight: 500;
@@ -173,12 +188,17 @@ color: white;
     background-position: center;
     
 }
-.story, .galery, .rsvp, .gifts {
+.story, .rsvp, .gifts {
     padding-top: 10rem;
     padding-bottom: 5rem;
 }
 .story {
     position: relative;
+}
+.story .judul p {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-size: 2rem;
 }
 .story .bgvid {
     position: absolute;
@@ -199,7 +219,7 @@ color: white;
     display: block;
     margin-bottom: 1rem;
 }
-.story p, .rsvp p, .gifts p {
+.rsvp p, .gifts p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -297,11 +317,15 @@ float: right;
 
 
 .galery {
-    background-image: url(img/bg11.jpg);
+    background-image: url(img/bg2.jpg);
     background-size: cover;
     min-height: 200vh;
     background-position: center;
     
+}
+.galery{
+    padding-top: 20rem;
+    padding-bottom: 5rem;
 }
 .rsvp {
     background-color: var(--bg);
