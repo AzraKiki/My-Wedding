@@ -179,6 +179,11 @@ color: white;
     font-size: 2.3rem;
     font-weight: 500;
 }
+.info .card-header p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 200;
+}
 .info .card-footer{
     font-size: 1rem;
 }
